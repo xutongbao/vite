@@ -1,0 +1,2 @@
+import{g as s,h as e,o as t,c as a,j as r,u as o,b as n,k as c}from"./index.11a22f78.js";const u={class:"m-header"},d={expose:[],setup(n){const c=s(),d=e((()=>c.state.light.header));return(s,e)=>(t(),a("div",u,r(o(d)),1))}};const i={},p={class:"m-footer"};i.render=function(s,e,r,o,n,c){return t(),a("div",p)};const f={class:"m-wrap"},l={expose:[],setup:s=>(s,e)=>{const r=c("router-view");return t(),a("div",f,[n(d),n(r),n(i)])}};export default l;
+//# sourceMappingURL=Index.e9340eb2.js.map

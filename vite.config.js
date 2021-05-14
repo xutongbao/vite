@@ -11,6 +11,7 @@ export default defineConfig({
     assetsDir: 'assets',
     sourcemap: true
   },
+  base: '/vite',
   resolve: {
     alias: {
       '@': __dirname + '/src'
