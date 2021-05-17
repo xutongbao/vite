@@ -1,1 +1,0 @@
-{"version":3,"file":"Home.a8f5bf8b.js","sources":["../../../src/views/light/index/home/Home.vue"],"sourcesContent":["<template>\r\n  <div class=\"m-main m-home\">home</div>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n\r\n}\r\n</script>\r\n\r\n<style>\r\n\r\n</style>"],"names":[],"mappings":"+CAKK"}
