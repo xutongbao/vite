@@ -1,0 +1,1 @@
+{"version":3,"file":"myBooks.8ae0c7af.js","sources":["../../../src/views/light/index/myBooks/myBooks.vue"],"sourcesContent":["<template>\r\n  <div class=\"m-main\">book</div>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n\r\n}\r\n</script>\r\n\r\n<style>\r\n\r\n</style>"],"names":[],"mappings":"sCAKK"}

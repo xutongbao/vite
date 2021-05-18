@@ -1,0 +1,54 @@
+<template>
+  <div class="m-category-item">
+    <el-image
+      :alt="book.title"
+      :src="book.avatar"
+      lazy
+      class="m-category-item-img"
+      @click="handleImageClick(book.id)"
+    >
+      <template #placeholder>
+        <div class="m-category-item-img-loading"></div>
+      </template>
+    </el-image>
+    <div class="m-category-item-info">
+      <div>{{ book.title }}</div>
+      <Stars :number="book.stars" />
+      <div class="m-book-price">￥{{ book.price }}</div>
+      <button @click="handleShowDialog">添加</button>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { defineProps } from "vue"
+import Stars from "@/components/light/Stars.vue"
+import { useStore } from "vuex"
+import { useRouter } from "vue-router"
+
+const props = defineProps({
+  book: {
+    type: Object,
+  },
+})
+
+const store = useStore()
+const router = useRouter()
+
+const handleShowDialog = () => {
+  store.commit({
+    type: "setLightState",
+    key: "isListDialogVisible",
+    value: true,
+  })
+  const book = props.book
+  book.count = 1
+  store.commit({ type: "setLightState", key: "addBook", value: book })
+}
+
+const handleImageClick = (id) => {
+  router.push(`/light/detail/${id}`)
+}
+</script>
+
+<style></style>
