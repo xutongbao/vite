@@ -1,11 +1,12 @@
 import { createApp } from "vue"
-import ElementPlus from "element-plus"
+import { locale } from "element-plus"
+import App from "./App.vue"
 import router from "./router"
 import store from "./store"
-import App from "./App.vue"
-import "dayjs/locale/zh-cn"
-import "element-plus/lib/theme-chalk/index.css"
-import locale from "element-plus/lib/locale/lang/zh-cn"
 import "./static/css/light.css"
+import 'dayjs/locale/zh-cn'
+import lang from 'element-plus/lib/locale/lang/zh-cn'
 
-createApp(App).use(store).use(router).use(ElementPlus, { locale }).mount("#app")
+locale(lang)
+const app = createApp(App).use(store).use(router)
+app.mount("#app")

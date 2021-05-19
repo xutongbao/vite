@@ -9,7 +9,8 @@ export default {
     isListDialogVisible: false,
     addBook: {},
     myBooks: [],
-    detailBook: {}
+    detailBook: {},
+    scrollTop: 0,
   },
   mutations: {
     setLightState(state, payload) {

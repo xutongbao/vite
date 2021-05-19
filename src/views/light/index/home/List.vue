@@ -1,5 +1,5 @@
 <template>
-  <div class="m-list" @scroll="handleScroll">
+  <div class="m-list" @scroll="handleScroll" :ref="handeListRef">
     <Category
       v-for="category in list"
       :key="category.id"
@@ -47,7 +47,7 @@ const addBook = computed(() => store.state.light.addBook)
 const isListDialogVisible = computed(
   () => store.state.light.isListDialogVisible
 )
-const { handleScroll, handleTopArr } = useListScroll()
+const { handeListRef, handleScroll, handleTopArr } = useListScroll()
 const {
   handleClose,
   handleOk,

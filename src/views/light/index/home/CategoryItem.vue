@@ -21,6 +21,7 @@
 </template>
 
 <script setup>
+import { ElImage } from 'element-plus'
 import { defineProps } from "vue"
 import Stars from "@/components/light/Stars.vue"
 import { useStore } from "vuex"

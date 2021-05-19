@@ -33,5 +33,9 @@ export default [
         }        
       },            
     ]
-  }
+  },
+  {
+    path: '/light/detail/:id',
+    component: () => import("../views/light/detail/Detail.vue")
+  }  
 ]
